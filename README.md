@@ -3,7 +3,7 @@
 Bu proje "Kampüs Etkinlikleri" uygulamasının temel HTML iskeletini içermektedir. Sadece saf HTML5 kullanılmış olup, CSS ve JavaScript içermemektedir. Erişilebilirlik kuralları gereği semantic etiketler (`header`, `nav`, `main`, `footer`, `article`, `time`, `figure` vb.) ve form yapıları (`label`, `required`) kullanılarak oluşturulmuştur.
 
 ## Vercel Canlı Yayına Alma Adresi
-https://connect.vercel.com/trigger/scl_oHOLWN8ALbj2Bo7H8NySUw
+kampus-etkinlik-a5l1fd1vs-davutowski.vercel.app
 
 ## İçerikteki Sayfalar
 1. `index.html`: Uygulamanın amacı ve yaklaşan iki etkinlik.
