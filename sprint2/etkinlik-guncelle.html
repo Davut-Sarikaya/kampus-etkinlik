@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampüs Etkinlikleri - Etkinlik Güncelle</title>
+    <link rel="stylesheet" href="css/2416501057.css">
+</head>
+<body>
+    <header>
+        <h1>Kampüs Etkinlikleri</h1>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="etkinlikler.html">Etkinlikler</a>
+            <a href="etkinlik-detay1.html">Detay1</a>
+            <a href="etkinlik-detay2.html">Detay2</a>
+            <a href="etkinlik-detay3.html">Detay3</a>
+            <a href="etkinlik-ekle.html">Ekle</a>
+            <a href="etkinlik-guncelle.html">Güncelle</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Etkinlik Güncelle</h2>
+        <form action="#" method="get">
+            <div class="form-grup">
+                <label for="etkinlikAdi">Etkinlik Adı:</label>
+                <input type="text" id="etkinlikAdi" name="etkinlikAdi" value="Kariyer Günleri 2026" required>
+            </div>
+            
+            <div class="form-grup">
+                <label for="kategori">Kategori:</label>
+                <select id="kategori" name="kategori" required>
+                    <option value="seminer" selected>Seminer</option>
+                    <option value="atolye">Atölye</option>
+                    <option value="konser">Konser</option>
+                </select>
+            </div>
+
+            <div class="form-grup">
+                <label for="tarih">Tarih:</label>
+                <input type="date" id="tarih" name="tarih" value="2026-10-12" required>
+            </div>
+
+            <div class="form-grup">
+                <label for="saat">Saat:</label>
+                <input type="time" id="saat" name="saat" value="14:00" required>
+            </div>
+
+            <div class="form-grup">
+                <label for="yer">Yer:</label>
+                <input type="text" id="yer" name="yer" value="A Blok Konferans Salonu" required>
+            </div>
+
+            <div class="form-grup">
+                <label for="aciklama">Açıklama:</label>
+                <textarea id="aciklama" name="aciklama" rows="4" required>Sektörün önde gelen temsilcileri kampüsümüzde sizlerle buluşuyor. Özgeçmiş hazırlama teknikleri ve mülakat simülasyonları.</textarea>
+            </div>
+
+            <div class="form-grup">
+                <label for="kontenjan">Kontenjan:</label>
+                <input type="number" id="kontenjan" name="kontenjan" value="120" required>
+            </div>
+
+            <button type="submit">Güncelle</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>AD SOYAD: Davut Sarıkaya ÖğrenciNo: 2416501057 2026</p>
+    </footer>
+</body>
+</html>
