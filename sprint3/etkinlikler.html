@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampüs Etkinlikleri - Etkinlikler Listesi</title>
+    <link rel="stylesheet" href="css/2416501057.css">
+</head>
+<body>
+    <header>
+        <h1>Kampüs Etkinlikleri</h1>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="etkinlikler.html">Etkinlikler</a>
+            <a href="etkinlik-ekle.html">Ekle</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Tüm Etkinlikler</h2>
+        <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+            <input type="text" id="search-input" placeholder="Etkinlik ara (Örn: Robotik)..." style="flex:1; min-width: 200px;">
+            <select id="category-filter" style="flex:1; min-width: 200px;">
+                <option value="">Tüm Kategoriler</option>
+                <option value="seminer">Seminer</option>
+                <option value="atolye">Atölye</option>
+                <option value="konser">Konser</option>
+            </select>
+        </div>
+        <p id="result-text" style="font-weight: bold; font-size: 0.9rem; color: #555; margin-bottom: 1rem;"></p>
+        <section id="events-grid" class="grid-container uclu-grid"></section>
+    </main>
+    <footer>
+        <p>AD SOYAD: Davut Sarıkaya ÖğrenciNo: 2416501057 2026</p>
+    </footer>
+    <script type="module" src="js/event-list.js"></script>
+</body>
+</html>
