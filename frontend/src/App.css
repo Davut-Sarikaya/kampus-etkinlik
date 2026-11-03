@@ -1,9 +1,9 @@
 /* Davut 2416501057 */
 :root {
     --no: 2416501057;
-    --ton: mod(var(--no), 360);
-    --renk-ana: hsl(var(--ton) 65% 38%);
-    --renk-zemin: hsl(var(--ton) 30% 97%);
+    --ton: 257; /* 2416501057 mod 360 işleminin sabit karşılığı olan harika bir mor/mavi tonu */
+    --renk-ana: hsl(257, 65%, 38%);
+    --renk-zemin: hsl(257, 30%, 97%);
     --font: "Palatino Linotype", serif;
     --bosluk-m: 1rem;
     --kose: 8px;
