@@ -13,12 +13,15 @@ function EventDetail({ event, onBack, onEdit }: EventDetailProps) {
     const dateStrDet = dateObjDet.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' });
     const timeStrDet = dateObjDet.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' });
 
+    // Afiş yolunun başında / olmasına dikkat ediyoruz ki public klasöründen doğru çeksin
+    const imagePath = event.image.startsWith('/') ? event.image : `/${event.image}`;
+
     return (
         <>
             <h1>{event.title}</h1>
             <div className="detay-grid">
                 <figure>
-                    <img src={event.image} alt={`${event.title} afişi`} />
+                    <img src={imagePath} alt={`${event.title} afişi`} />
                     <figcaption>Şekil: {event.title} afişi</figcaption>
                 </figure>
                 <div>

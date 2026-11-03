@@ -1,36 +1,23 @@
 // src/components/layout/Navigation.tsx
-import { type PageName } from '../../types/page';
+import { NavLink } from 'react-router-dom';
 
-interface NavigationProps {
-    current: PageName;
-    onNavigate: (page: PageName) => void;
-}
-
-function Navigation({ current, onNavigate }: NavigationProps) {
+function Navigation() {
     return (
         <nav>
-            <a 
-                href="#" 
-                onClick={(e) => { e.preventDefault(); onNavigate('home'); }}
-                style={{ fontWeight: current === 'home' ? 'bold' : 'normal', textDecoration: current === 'home' ? 'underline' : 'none' }}
-            >
+            <NavLink to="/" className={({ isActive }: { isActive: boolean }) => isActive ? 'active-link' : ''} end>
                 Ana Sayfa
-            </a>
-            <a 
-                href="#" 
-                onClick={(e) => { e.preventDefault(); onNavigate('events'); }}
-                style={{ fontWeight: current === 'events' ? 'bold' : 'normal', textDecoration: current === 'events' ? 'underline' : 'none' }}
-            >
+            </NavLink>
+            <NavLink to="/events" className={({ isActive }: { isActive: boolean }) => isActive ? 'active-link' : ''}>
                 Etkinlikler
-            </a>
-            <a 
-                href="#" 
-                onClick={(e) => { e.preventDefault(); onNavigate('add'); }}
-                style={{ fontWeight: current === 'add' ? 'bold' : 'normal', textDecoration: current === 'add' ? 'underline' : 'none' }}
-            >
-                Ekle
-            </a>
+            </NavLink>
+            <NavLink to="/admin" className={({ isActive }: { isActive: boolean }) => isActive ? 'active-link' : ''}>
+                Yönetim
+            </NavLink>
+            <NavLink to="/login" className={({ isActive }: { isActive: boolean }) => isActive ? 'active-link' : ''}>
+                Giriş
+            </NavLink>
         </nav>
     );
 }
+
 export default Navigation;
