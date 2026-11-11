@@ -1,12 +1,25 @@
-# Kampüs Etkinlikleri - Sprint 7: Express REST API
+# 🚀 Kampüs Etkinlikleri Platformu
 
-Bu proje, Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği Web Teknolojileri ve Programlama dersi kapsamında geliştirilen Express tabanlı bir REST API uygulamasıdır.
+Bu proje, Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği **Web Teknolojileri ve Programlama** dersi kapsamında geliştirilmekte olan, kampüs içi etkinliklerin paylaşıldığı ve yönetildiği kapsamlı bir web platformudur.
 
-## Proje Yapısı
-- `backend/`: Express.js sunucusu, rotalar, controller ve geçici veri yapısı.
-- `backend/requests/`: Postman koleksiyon (`kampus-api.json`) yedekleri.
+---
 
-## Çalıştırma
-1. `cd backend` komutu ile backend klasörüne girin.
-2. `npm install` ile bağımlılıkları yükleyin.
-3. `npm run dev` komutu ile sunucuyu başlatın.
+## 📂 Proje Mimarisi ve Sprintler
+
+Proje, her sprintte aşamalı olarak geliştirilen modüler bir yapıya sahiptir:
+
+* **`backend/`**: Express.js ile geliştirilmiş RESTful API sunucusu. Etkinlik yönetimi, kategori filtreleme ve veri doğrulama işlemlerini gerçekleştirir.
+  * **`src/data/`**: Bellek üzerinde (in-memory) çalışan özgün SDÜ etkinlik verileri (`events.js`).
+  * **`src/controllers/`**: İstek mantığını yöneten fonksiyonlar (`event-controller.js`).
+  * **`src/routes/`**: API uç noktalarını yönlendiren rotalar (`event-routes.js`).
+  * **`requests/`**: Postman test koleksiyonu yedekleri (`kampus-api.json`).
+* **`frontend/`**: Kullanıcı arayüzü ve sayfa tasarımları.
+* **`sprint1/` - `sprint3/`**: Ders kapsamında tamamlanan önceki aşamalar ve prototipler.
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+* **Backend:** Node.js, Express.js, ES Modules (`type: module`), Cors, Dotenv
+* **Test & API Araçları:** Postman (Collection v2.1)
+* **Sürüm Kontrolü:** Git & GitHub (`sprint-07` tag sürüm takibiyle)
