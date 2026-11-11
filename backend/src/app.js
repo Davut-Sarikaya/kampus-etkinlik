@@ -1,12 +1,12 @@
 import express from "express";
 import cors from "cors";
-// import eventRoutes from "./routes/event-routes.js"; // İleride açacağız
+import eventRoutes from "./routes/event-routes.js"; // Route importu
 
 const app = express();
 app.use(cors());
-app.use(express.json()); // body -> req.body (Hata almamak için kritik)
+app.use(express.json()); 
 
-// ADIM 4: Health Check (Sunucu ayakta mı?)
+// 1. Önce Health Check
 app.get("/health", (req, res) => {
   res.json({
     status: "ok",
@@ -15,9 +15,10 @@ app.get("/health", (req, res) => {
   });
 });
 
-// app.use("/events", eventRoutes); // İleride açacağız
+// 2. Sonra Etkinlik Rotaları
+app.use("/events", eventRoutes); 
 
-// Eşleşme yoksa (404)
+// 3. EN SONA 404 Hata Bloğu (Bunun yeri çok kritik!)
 app.use((req, res) => {
   res.status(404).json({ error: { message: "Route not found" } });
 });
