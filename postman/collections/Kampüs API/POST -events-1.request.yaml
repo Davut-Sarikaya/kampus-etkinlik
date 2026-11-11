@@ -1,0 +1,12 @@
+$kind: http-request
+name: POST /events
+url: http://localhost:3000/events
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"title\": \"Hatalı İstek\"\r
+
+    }"
+order: 6000

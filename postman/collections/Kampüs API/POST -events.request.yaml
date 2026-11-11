@@ -1,0 +1,18 @@
+$kind: http-request
+name: POST /events
+url: http://localhost:3000/events
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"title\": \"Git Atölyesi\",\r
+
+    \  \"category\": \"Atölye\",\r
+
+    \  \"date\": \"2026-12-01\",\r
+
+    \  \"capacity\": 30\r
+
+    }"
+order: 5000
